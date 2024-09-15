@@ -1,0 +1,220 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnthonyIsntHere/anthonysrepository/main/scripts/AntiChatLogger.lua", true))()
+
+local TCS = game:GetService("TextChatService")
+local CoreGui = game:GetService("CoreGui")
+local RStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local HttpService = game:GetService("HttpService")
+local UserInputService = game:GetService("UserInputService")
+local LocalPlayer = Players.LocalPlayer
+local PlayerGui = LocalPlayer.PlayerGui
+local isLegacy = TCS.ChatVersion == Enum.ChatVersion.LegacyChatService
+local ChatBar = CoreGui:FindFirstChild("TextBoxContainer", true) or PlayerGui:FindFirstChild("Chat"):FindFirstChild("ChatBar", true)
+ChatBar = ChatBar:FindFirstChild("TextBox") or ChatBar
+
+local Chat = function(Message)
+    if isLegacy then
+        local ChatRemote = RStorage:FindFirstChild("SayMessageRequest", true)
+        ChatRemote:FireServer(Message, "All")
+    else
+        local Channel = TCS.TextChannels.RBXGeneral
+        Channel:SendAsync(Message)
+    end
+end
+
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/ArrayField/main/Source.lua'))()
+
+local Window = ArrayField:CreateWindow({
+   Name = "plate bypasser V1",
+   LoadingTitle = "plate bypasser V1",
+   LoadingSubtitle = "by nmeadow",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, 
+      FileName = "ArrayField"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "discord.gg/QxXxcRMg",     
+     RememberJoins = true 
+   },
+   KeySystem = true,
+   KeySettings = {
+      Title = "plate bypasser V.1",
+      Subtitle = "Key System",
+      Note = "discord.gg/QxXxcRMg join up niggas",
+      FileName = "Key", 
+      SaveKey = true,
+      GrabKeyFromSite = false, 
+      Actions = {
+            [1] = {
+                Text = 'Click here to copy the key link <--',
+                OnPress = function()
+                    print('Pressed')
+                end,
+                }
+            },
+      Key = {"thestart"} 
+   }
+})
+
+local Tab = Window:CreateTab("Main") -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Fix Bypasses!",
+   Interact = 'Click',
+   Callback = function()
+  Chat("ababab-0")
+   end,
+})
+
+local Section = Tab:CreateSection("credits") -- The 2nd argument is to tell if its only a Title and doesnt contain element
+local Label = Tab:CreateLabel("made by nmeadow and help of shadow62")
+
+local Button = Tab:CreateButton({
+   Name = "nmeadow is the fucking goat",
+   Interact = 'Click',
+   Callback = function()
+  Chat("n￴m￴e￴a￴d￴o￴wi￴st￴h￴ef￴￴u￴￴c￴￴k￴￴i￴￴n￴￴g￴￴g￴o￴a￴t")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "this nigga aint using platebypasser LOL",
+   Interact = 'Click',
+   Callback = function()
+  Chat("t￴h￴i￴sn￴￴i￴￴g￴￴g￴￴a￴￴a￴i￴n￴t￴u￴s￴i￴n￴g￴p￴l￴ate￴b￴y￴p￴a￴s￴s￴e￴r￴L￴O￴L￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "why do these dumb niggers not worship shadow62",
+   Interact = 'Click',
+   Callback = function()
+  Chat("w￴h￴y￴d￴o￴t￴h￴e￴s￴e￴d￴u￴m￴b￴n￴￴i￴￴g￴￴g￴￴e￴￴r￴￴s￴￴n￴o￴t￴w￴o￴r￴s￴h￴i￴p￴s￴h￴a￴d￴o￴w￴6￴2￴?")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "j￴￴o￴￴i￴￴n￴￴.￴￴g￴￴g￴￴/￴￴Q￴x￴X￴x￴c￴R￴M￴g￴f￴o￴rt￴h￴eh￴o￴t￴t￴e￴s￴tb￴￴i￴￴t￴￴c￴￴h￴￴e￴￴s￴￴!",
+   Interact = 'Click',
+   Callback = function()
+  Chat("j￴￴o￴￴i￴￴n￴￴.￴￴g￴￴g￴￴/￴￴Q￴x￴X￴x￴c￴R￴M￴g￴f￴o￴rt￴h￴eh￴o￴t￴t￴e￴s￴tb￴￴i￴￴t￴￴c￴￴h￴￴e￴￴s￴￴!")
+   end,
+})
+
+local Tab = Window:CreateTab("Sexual", nil) -- Title, Image
+local Label = Tab:CreateLabel("Sexual")
+
+local Button = Tab:CreateButton({
+   Name = "may i rape you?",
+   Interact = 'Click',
+   Callback = function()
+  Chat("m￴￴￴a￴￴￴yir￴￴￴￴a￴￴￴p￴￴￴ey￴￴￴o￴￴￴u?")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i rape minors for fun!",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴r￴￴￴a￴￴￴p￴￴￴e￴￴￴m￴￴￴i￴￴￴n￴￴￴o￴￴￴r￴￴￴s￴￴￴f￴￴￴o￴￴￴r￴￴￴f￴￴￴u￴￴￴n￴￴￴!￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i want to squish those boobs!",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴￴w￴￴￴a￴￴￴n￴￴￴t￴￴￴t￴￴￴o￴￴￴s￴￴￴q￴￴￴u￴￴￴i￴￴￴s￴￴￴h￴￴￴t￴￴￴h￴￴￴o￴￴￴s￴￴￴e￴￴￴b￴￴￴o￴￴￴o￴￴￴b￴￴￴s!￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i am going to sexually harrass you..",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴￴a￴￴￴m￴￴￴g￴￴￴o￴￴￴i￴￴￴n￴￴￴g￴￴￴t￴￴￴o￴￴￴s￴￴￴e￴￴￴x￴￴￴u￴￴￴a￴￴￴l￴￴￴l￴￴￴y￴￴￴h￴￴￴a￴￴￴r￴￴￴a￴￴￴s￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴.￴￴￴.￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i molest women walking alone at 3am",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴￴m￴￴￴o￴￴￴l￴￴￴e￴￴￴s￴￴￴t￴￴￴w￴￴￴o￴￴￴m￴￴￴e￴￴￴n￴￴￴w￴￴￴a￴￴￴l￴￴￴k￴￴￴i￴￴￴n￴￴￴g￴￴￴a￴￴￴l￴￴￴o￴￴￴n￴￴￴e￴￴￴a￴￴￴t￴￴￴3￴￴￴a￴￴￴m￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "touch minors where the sun does not shine..",
+   Interact = 'Click',
+   Callback = function()
+  Chat("t￴￴￴o￴￴￴u￴￴￴c￴￴￴h￴￴￴m￴￴￴i￴￴￴n￴￴￴o￴￴￴r￴￴￴sw￴￴￴h￴￴￴e￴￴￴r￴￴￴e￴￴￴t￴￴￴h￴￴￴e￴￴￴s￴￴￴u￴￴￴n￴￴￴do￴￴￴e￴￴￴s￴￴￴n￴￴￴o￴￴￴t￴￴￴s￴￴￴h￴￴￴i￴￴￴n￴￴￴e￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i￴￴￴d￴￴￴i￴￴￴d￴￴￴i￴￴￴n￴￴￴c￴￴￴e￴￴￴s￴￴￴t￴￴￴w￴￴￴i￴￴￴t￴￴￴h￴￴￴m￴￴￴y￴￴￴s￴￴￴i￴￴￴s￴￴￴t￴￴￴e￴￴￴r￴￴￴!￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴￴d￴￴￴i￴￴￴d￴￴￴i￴￴￴n￴￴￴c￴￴￴e￴￴￴s￴￴￴t￴￴￴w￴￴￴i￴￴￴t￴￴￴h￴￴￴m￴￴￴y￴￴￴s￴￴￴i￴￴￴s￴￴￴t￴￴￴e￴￴￴r￴￴￴!￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "lick my foot slave!",
+   Interact = 'Click',
+   Callback = function()
+  Chat("l￴￴￴i￴￴￴c￴￴￴k￴￴￴m￴￴￴y￴￴￴f￴￴￴o￴￴￴o￴￴￴t￴￴￴s￴￴￴l￴￴￴a￴￴￴v￴￴￴e￴￴￴!￴￴￴!￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "E￴￴￴W￴￴￴!￴￴￴!￴￴￴t￴￴￴h￴￴￴i￴￴￴s￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴s￴￴￴p￴￴￴u￴￴￴t￴￴￴r￴￴￴i￴￴￴d￴￴￴!￴￴￴💩￴￴￴￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("E￴￴￴W￴￴￴!￴￴￴!￴￴￴t￴￴￴h￴￴￴i￴￴￴s￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴s￴￴￴p￴￴￴u￴￴￴t￴￴￴r￴￴￴i￴￴￴d￴￴￴!￴￴￴💩￴￴￴￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "i￴￴￴r￴￴￴a￴￴￴p￴￴￴e￴￴￴a￴￴￴l￴￴￴l￴￴￴q￴￴￴u￴￴￴e￴￴￴e￴￴￴r￴￴￴s￴￴￴!￴￴￴￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("i￴￴￴r￴￴￴a￴￴￴p￴￴￴e￴￴￴a￴￴￴l￴￴￴l￴￴￴q￴￴￴u￴￴￴e￴￴￴e￴￴￴r￴￴￴s￴￴￴!￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴",
+   Interact = 'Click',
+   Callback = function()
+  Chat("￴￴￴w￴￴￴h￴￴￴a￴￴￴t￴￴￴c￴￴￴o￴￴￴l￴￴￴o￴￴￴r￴￴￴i￴￴￴s￴￴￴y￴￴￴o￴￴￴u￴￴￴r￴￴￴p￴￴￴u￴￴￴s￴￴￴s￴￴￴y￴￴￴i￴￴￴n￴￴￴h￴￴￴e￴￴￴x￴￴￴c￴￴￴o￴￴￴d￴￴￴e￴￴￴?￴￴￴")
+   end,
+})
